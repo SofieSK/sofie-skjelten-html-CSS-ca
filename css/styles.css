@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Rubik Bubbles";
+    src: url(/Fonts/Rubik_Bubbles/RubikBubbles-Regular.ttf) format(truetype);
+}
+
+.logo {
+    font-family: "Rubik Bubbles", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+body {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    background-color: #FFF9EF;
+}
+
+
+header {
+    background-color: #fff;
+    color: #573F2A;
+}
+
+header a {
+    color: #573F2A;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: #EBDAB7;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Header*/
+
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav {
+    margin-left: 25px;
+    top: 45px;
+    background: #fff;
+    z-index: 1000px;
+    right: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/*Home Page*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    max-width: 100%;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 20px;
+    grid-gap: 10px;
+    text-transform: uppercase;
+}
+
+.container img {
+    grid-template-columns: 1fr auto;
+    grid-column: -1/1;
+}
+
+.quality-pic {
+    height: 600px;
+}
+
+.coffeeshops-homepic {
+    height: 197px;
+}
+
+.weekly-pic {
+    height: 600px;
+    width: 500px;
+
+}
+
+.quality-content h1,
+.coffeeshops-home h2,
+.weekly h3 {
+    grid-column: 1;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.order {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    background-color: #FDD8AF;
+    padding: 5px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    max-width: 1000vh;
+    grid-gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+.products img {
+    grid-template-columns: 1fr auto;
+    grid-column: -1/1;
+    height: 400px;
+    align-items: center;
+}
+
+/*About Page*/
