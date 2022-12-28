@@ -193,6 +193,14 @@ a {
 
 /*Contact Page*/
 
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    max-width: 1000px;
+    margin: 20px auto;
+    grid-gap: 10%;
+}
+
 input {
     border: 1px solid black;
     margin: 0px 20px 20px 0px;
@@ -223,7 +231,95 @@ textarea {
 
 .cta {
     margin-top: 20px;
-    margin-bottom: 19%;
+    margin-bottom: 20%;
     text-transform: uppercase;
     border: 2px solid;
+}
+
+.contact-content h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.contact-text {
+    font-size: 1rem;
+    width: 800px;
+    margin-top: 37%;
+}
+
+
+
+/*Coffeeshops Page*/
+
+.coffeeshops {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-bottom: 5%;
+    grid-gap: 10px;
+}
+
+.coffeeshops img {
+    grid-template-columns: 1fr auto;
+    grid-column: -1/1;
+    height: 400px;
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.coffeeshopsh1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.coffeeshops h2,
+.coffeeshops h3,
+.coffeeshops h4 {
+    grid-column: 1;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.cta-button {
+    grid-column: 1;
+    border-bottom: 1px solid black;
+    padding: 0px 0px;
+    font-size: 1rem;
+    margin-left: 10px;
+    color: black;
+}
+
+/*location page */
+
+.location {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    max-width: 1000px;
+    grid-gap: 0%;
+    margin-left: 10%;
+}
+
+.location img {
+    grid-template-columns: 1fr auto;
+    grid-column: -1/1;
+    height: 400px;
+    margin-bottom: 32%;
+}
+
+.location h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+    margin-top: 40px;
+}
+
+.location-two {
+    height: 300px;
+    margin-top: 30%;
+    text-align: left;
 }
