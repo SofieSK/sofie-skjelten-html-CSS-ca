@@ -3,6 +3,11 @@
     src: url(/Fonts/Rubik_Bubbles/RubikBubbles-Regular.ttf) format(truetype);
 }
 
+@font-face {
+    font-family: "Courgette";
+    src: url(/Fonts/Courgette/Courgette-Regular.ttf) format(truetype);
+}
+
 .logo {
     font-family: "Rubik Bubbles", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
@@ -11,7 +16,8 @@
 
 body {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100vh;
+    min-height: 100%;
+    max-width: 100%;
     margin: 0px;
     background-color: #FFF9EF;
 }
@@ -136,3 +142,88 @@ a {
 }
 
 /*About Page*/
+
+.quote {
+    text-align: center;
+    font-family: "Courgette", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    max-width: 1000vh;
+    grid-gap: 50px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+.content-start {
+    background-color: #fff;
+    width: 400px;
+    text-align: center;
+}
+
+.content-start p {
+    font-size: 1.5rem;
+}
+
+.content-goals {
+    background-color: #EBDAB7;
+    width: 400px;
+    text-align: center;
+}
+
+.content-goals p {
+    font-size: 1.5rem;
+}
+
+.content-pic {
+    width: 400px;
+}
+
+.content h1,
+.content h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/*Contact Page*/
+
+input {
+    border: 1px solid black;
+    margin: 0px 20px 20px 0px;
+    height: 30px;
+    width: 300px;
+}
+
+.form-wrapper input,
+.form-wrapper label {
+    display: block;
+}
+
+textarea {
+    height: 100px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.contact {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.form-wrappertwo input,
+.form-wrappertwo label {
+    display: block;
+}
+
+.cta {
+    margin-top: 20px;
+    margin-bottom: 19%;
+    text-transform: uppercase;
+    border: 2px solid;
+}
