@@ -76,7 +76,7 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: 1fr;
     max-width: 100%;
     margin-top: 50px;
     margin-right: 10px;
@@ -126,8 +126,8 @@ a {
 
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
-    max-width: 1000vh;
+    grid-template-columns: 1fr;
+    max-width: 100%;
     grid-gap: 50px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -153,7 +153,7 @@ a {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: 1fr;
     max-width: 1000vh;
     grid-gap: 50px;
     margin-top: 5px;
@@ -195,7 +195,7 @@ a {
 
 .contact-content {
     display: grid;
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: 1fr;
     max-width: 1000px;
     margin: 20px auto;
     grid-gap: 10%;
@@ -253,7 +253,7 @@ textarea {
 
 .coffeeshops {
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: 1fr;
     max-width: 100%;
     margin-top: 10px;
     margin-left: 25px;
@@ -322,4 +322,40 @@ textarea {
     height: 300px;
     margin-top: 30%;
     text-align: left;
+}
+
+
+/* responsiveness */
+
+@media screen and (min-width:600px) {
+
+    .container,
+    .products,
+    .content,
+    .coffeeshops {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-content {
+    grid-template-columns: 1fr;
+    grid-gap: 0%;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    .container,
+    .products,
+    .content,
+    .coffeeshops {
+        grid-template-columns: repeat(3, 0fr);
+    }
+}
+
+.contact-content {
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 10%;
 }
