@@ -21,9 +21,9 @@ function createHTML(products) {
     products.forEach(function (product) {
         console.log(product);
         productContainer.innerHTML +=
-            `<div> 
+            `<a href="travelmugs.html?id=${product.id}" > 
         <h2>${product.name}</h2>
         <img src="${product.images[0].src}" alt="${product.name}">
-        </div>`;
+        </a>`;
     })
 }
