@@ -12,6 +12,7 @@
     font-family: "Rubik Bubbles", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
+    color: #573F2A;
 }
 
 body {
@@ -32,13 +33,13 @@ main {
 
 header {
     background-color: #fff;
-    color: #573F2A;
 }
 
 header a {
     color: #573F2A;
     padding: 10px;
     justify-content: space-evenly;
+    color: black;
 }
 
 footer {
@@ -46,6 +47,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+    color: black;
 }
 
 /*Header*/
