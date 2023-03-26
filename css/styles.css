@@ -30,6 +30,9 @@ main {
     flex: 1;
 }
 
+a {
+    color: black;
+}
 
 header {
     background-color: #fff;
@@ -337,6 +340,12 @@ textarea {
     text-align: left;
 }
 
+
+/*shop*/
+
+.shoppage {
+    text-align: center;
+}
 
 /* responsiveness */
 
